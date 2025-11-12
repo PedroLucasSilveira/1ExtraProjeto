@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: monitoring-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
